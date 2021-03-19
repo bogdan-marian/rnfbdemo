@@ -28,7 +28,7 @@ export default class App extends Component {
         <Text style={styles.instructions}>{instructions}</Text>
         <Text>The following modules are installed natively and working:</Text>
         {firebase.apps.length && <Text style={styles.module}>app()</Text>}
-        {analytics().native && <Text style={styles.module}>analytics()</Text>}
+        {/* {analytics().native && <Text style={styles.module}>analytics()</Text>} */}
         {crashlytics().native && <Text style={styles.module}>crashlytics()</Text>}
 
         <Button onPress={() => { console.log("Native Crash Now"); crashlytics().crash() }}>
